@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1541765923 source:c:\users\eugen\desktop\cursuri\tap\lab\divide et impera\matrice2n2n\main.cpp
+	<iostream>
+	<fstream>
+
