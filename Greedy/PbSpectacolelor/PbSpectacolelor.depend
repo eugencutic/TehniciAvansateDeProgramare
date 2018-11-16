@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1539343397 source:c:\users\student\desktop\233\eugen cutic\pbspectacolelor\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+

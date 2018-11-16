@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1541770622 source:c:\users\student\desktop\233\eugen cutic\tap repo\divide et impera\statisticideordine\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+

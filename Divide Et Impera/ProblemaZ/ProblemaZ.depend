@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1541766986 source:c:\users\student\desktop\233\eugen cutic\tap repo\divide et impera\problemaz\main.cpp
+	<iostream>
+	<fstream>
+
