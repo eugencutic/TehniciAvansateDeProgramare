@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="rucsac.in" />
+		<Unit filename="rucsac.out" />
 		<Extensions>
 			<code_completion />
 			<envvars />

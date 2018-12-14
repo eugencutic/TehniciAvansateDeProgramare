@@ -33,6 +33,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
+		<Unit filename="pm.in" />
+		<Unit filename="pm.out" />
 		<Extensions>
 			<code_completion />
 			<envvars />

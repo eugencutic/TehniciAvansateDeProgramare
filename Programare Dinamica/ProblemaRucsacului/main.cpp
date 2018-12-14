@@ -16,12 +16,24 @@ int main()
     for(int i = 1; i <= N; i++)
         in >> w[i] >> p[i];
 
+    for (int i = 0; i <= G; i++)
+        d[0][i] = -1000000000;
+
+    d[0][0] = 0;
+
     for(int i = 1; i <= N; i++)
     {
         for(int j = 0; j <= G; j++)
-            d[i][j] = max(d[i - 1][j], d[i - 1][j - w[i]] + p[i]);
+            if (j >= w[i])
+                d[i][j] = max(d[i - 1][j], d[i - 1][j - w[i]] + p[i]);
+            else
+                d[i][j] = d[i - 1][j];
     }
 
-    out << d[N][G];
+    int rezultat = 0;
+    for (int i = 1; i <= G; i++)
+        if (d[N][i] > rezultat)
+            rezultat = d[N][i];
+    out << rezultat;
     return 0;
 }
