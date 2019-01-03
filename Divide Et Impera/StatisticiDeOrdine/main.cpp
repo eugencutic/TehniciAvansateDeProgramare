@@ -16,7 +16,6 @@ int sdo(int left, int right, int k, int v[])
     int mid = (left + right) / 2;
     int val = v[mid];
 
-    cout << "valoarea" << val << "\n";
 
     vector<int> st, dr;
     for(int i = left; i <= right; i++)
@@ -27,7 +26,6 @@ int sdo(int left, int right, int k, int v[])
             dr.push_back(v[i]);
     }
 
-   // cout << st.size() << " " << dr.size() << "\n";
     if(st.size() < k && k < (right - left + 1) - dr.size() + 1)
         return val;
 
@@ -39,7 +37,7 @@ int sdo(int left, int right, int k, int v[])
     if(k <= st.size())
         return sdo(left, left + st.size() - 1, k, v);
     else
-        return sdo(right - dr.size() + 1, right, k - st.size(), v);
+        return sdo(right - dr.size() + 1, right, k - (right - left + 1 - dr.size()), v);
 }
 
 int main()
@@ -49,7 +47,6 @@ int main()
 
     int n, k;
     in >> n >> k;
-  //  cout << n << k;
 
 
     for(int i = 0; i < n; i++)

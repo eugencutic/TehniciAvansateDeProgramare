@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1542382703 source:c:\users\eugen\desktop\cursuri\tap\lab\greedy\lupu\main.cpp
+	<iostream>
+	<queue>
+	<fstream>
+	<vector>
+	<algorithm>
+
